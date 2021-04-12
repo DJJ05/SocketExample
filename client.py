@@ -41,7 +41,6 @@ except ConnectionRefusedError:
     sys.exit()
 
 while True:
-
     msg_length = client.recv(HEADER).decode(FORMAT)
     if msg_length:
         try:
